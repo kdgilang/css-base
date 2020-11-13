@@ -1,0 +1,79 @@
+.row {
+    margin-left: -($gutter-width/2);
+    margin-right: -($gutter-width/2);
+    @include clearfix();
+}
+
+[class*="col-"] {
+    float: left;
+    padding-left: ($gutter-width/2);
+    padding-right: ($gutter-width/2);
+    width: 100%;
+}
+
+.container {
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: $gutter-width/2;
+    padding-right: $gutter-width/2;
+    width: 100%;
+    @include media-up(sm) {
+        max-width: $container-sm-width;
+    }
+    @include media-up(md) {
+        max-width: $container-md-width;
+    }
+    @include media-up(lg) {
+        max-width: $container-lg-width;
+    }
+    @include media-up(xl) {
+        max-width: $container-xl-width;
+    }
+}
+
+/* Media */
+[class*="visible-"] {
+    display: none !important;
+}
+[class*="hidden-"] {
+    display: block !important;
+}
+
+@include loopColoumn(xs);
+
+@include media-up(sm) {
+    @include loopColoumn(sm);
+    .visible-sm {
+        display: block !important;
+    }
+    .hidden-sm {
+        display: none !important;
+    }
+}
+@include media-up(md) {
+    @include loopColoumn(md);
+    .visible-md {
+        display: block !important;
+    }
+    .hidden-md {
+        display: none !important;
+    }
+}
+@include media-up(lg) {
+    @include loopColoumn(lg);
+    .visible-lg {
+        display: block !important;
+    }
+    .hidden-lg {
+        display: none !important;
+    }
+}
+@include media-up(xl) {
+    @include loopColoumn(xl);
+    .visible-xl {
+        display: block !important;
+    }
+    .hidden-xl {
+        display: none !important;
+    }
+}
