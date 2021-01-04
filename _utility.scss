@@ -5,6 +5,7 @@
 }
 
 [class*="col-"] {
+    min-height: 1px;
     float: left;
     padding-left: ($gutter-width/2);
     padding-right: ($gutter-width/2);

@@ -34,6 +34,29 @@
     }
 }
 
+@mixin media-down($point) {
+    @if $point == xs {
+        @media (min-width: $media-sm-max) { 
+            @content;
+        }
+    }
+    @if $point == sm {
+        @media (min-width: $media-md-max) { 
+            @content;
+        }
+    }
+    @else if $point == md {
+        @media (min-width: $media-lg-max) { 
+            @content;
+        }
+    }
+    @else if $point == lg {
+        @media (min-width: $media-xl-max) { 
+            @content;
+        }
+    }
+}
+
 @mixin loopColoumn($point) {
     @for $i from 1 through $max-col {
         .#{$prefix}-#{$point}-#{$i} {

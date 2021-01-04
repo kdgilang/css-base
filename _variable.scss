@@ -9,7 +9,23 @@ $media-md: 768px;
 $media-lg: 992px;
 $media-xl: 1180px;
 
+$media-sm-max: $media-sm - 0.8;
+$media-md-max: $media-md - 0.8;
+$media-lg-max: $media-lg - 0.8;
+$media-xl-max: $media-xl - 0.8;
+
 $container-xl-width: 1136px;
 $container-lg-width: 960px;
 $container-md-width: 720px;
 $container-sm-width: 540px;
+
+// color
+$color-white: #ffffff;
+$color-black: #000000;
+$color-grey: #cccccc;
+$color-grey-dark: #333333;
+$color-grey-semi-dark: #757575;
+$color-grey-light: #efefef;
+
+$color-primary: #0A253E;
+$color-secondary: #E7DEC6;
